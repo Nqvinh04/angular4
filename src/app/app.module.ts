@@ -3,14 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import {FormsModule} from '@angular/forms';
+import { StyleClassComponent } from './style-class/style-class.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { WordsComponent } from './words/words.component';
+import { PersonComponent } from './person/person.component';
+import { ListPersonComponent } from './list-person/list-person.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataBindingComponent,
+    StyleClassComponent,
+    NgifComponent,
+    WordsComponent,
+    PersonComponent,
+    ListPersonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

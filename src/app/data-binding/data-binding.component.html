@@ -1,0 +1,17 @@
+<p>data-binding works!</p>
+<h3 [hidden]="forgot">{{en}}</h3>
+<h3>{{vn}}</h3>
+<img [hidden]="forgot" [src]="imgUrl" [width]="sizeImg">
+<button (click)="toggleForgot()">Toggle forgot</button>
+
+<h2>Two-Binding</h2>
+<!--Text input-->
+<!--<input placeholder="User Form" (keyup)="showEvent($event)">-->
+
+
+<!--Two way binding-->
+<input placeholder="User Form" [(ngModel)]="name" #name1 />
+<h3 [style.color]="name.length % 2 === 0 ? 'red' : 'black'">Your name is: {{name}}</h3>
+
+<p>{{name1.value | json}}</p>
+

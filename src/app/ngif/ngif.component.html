@@ -1,0 +1,9 @@
+<p *ngIf="isShow">ngif works!</p>
+<ul *ngIf="isShow">
+    <li  *ngFor="let subject of arrSubject">
+        <p>{{subject}}</p>
+    </li>
+</ul>
+<button (click)="isShow = !isShow">Display/Hidden</button>
+
+

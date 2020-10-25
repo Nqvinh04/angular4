@@ -1,0 +1,14 @@
+<p>style-class works!</p>
+
+<input placeholder="User Form" [(ngModel)]="name" />
+<h3 [ngStyle]="name.length % 2 ? evenStyle : oddStyle">Your name is: {{name}}</h3>
+
+<div [class.circle]="isGeometry"></div>
+<div [class.square]="!isGeometry"></div>
+<button (click)="geometry()">Change</button>
+<br/>
+
+
+<div [ngClass]="currentClass">
+</div>
+
