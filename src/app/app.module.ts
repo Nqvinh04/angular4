@@ -10,6 +10,8 @@ import { NgifComponent } from './ngif/ngif.component';
 import { WordsComponent } from './words/words.component';
 import { PersonComponent } from './person/person.component';
 import { ListPersonComponent } from './list-person/list-person.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ListPersonComponent } from './list-person/list-person.component';
     WordsComponent,
     PersonComponent,
     ListPersonComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
